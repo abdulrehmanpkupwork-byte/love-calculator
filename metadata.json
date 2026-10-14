@@ -1,0 +1,6 @@
+{
+  "name": "Love Calculator - Romantic Compatibility Test",
+  "description": "Discover your romantic compatibility with the Love Calculator. Enter your names to reveal your love percentage, relationship dynamics, and cosmic spark.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
