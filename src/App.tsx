@@ -7,6 +7,7 @@ import { LoveResult } from './components/LoveResult';
 import { HowItWorks } from './components/HowItWorks';
 import { getLoveDetails, LoveResultData } from './utils/loveAlgorithm';
 import { soundFx } from './utils/sound';
+import { Analytics } from '@vercel/analytics/react';
 
 type ViewState = 'form' | 'loading' | 'result';
 
@@ -178,6 +179,9 @@ export default function App() {
           <span>for true romantics</span>
         </p>
       </footer>
+
+      {/* Vercel Web Analytics */}
+      <Analytics />
     </div>
   );
 }
