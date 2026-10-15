@@ -106,16 +106,28 @@ export const CircularProgress: React.FC<CircularProgressProps> = ({
       {/* Center percentage and label */}
       <div className="absolute inset-0 flex flex-col items-center justify-center text-center">
         <div className="flex items-baseline justify-center">
-          <span className="text-5xl md:text-6xl font-bold font-mono tracking-tight text-white drop-shadow-[0_2px_10px_rgba(0,0,0,0.5)] tabular-nums">
+          <span
+            className={`${
+              size <= 130
+                ? 'text-2xl sm:text-3xl font-bold'
+                : 'text-5xl md:text-6xl font-bold'
+            } font-mono tracking-tight text-white drop-shadow-[0_2px_10px_rgba(0,0,0,0.5)] tabular-nums`}
+          >
             {displayScore}
           </span>
-          <span className="text-2xl md:text-3xl font-semibold text-pink-300 ml-1">
+          <span
+            className={`${
+              size <= 130 ? 'text-xs sm:text-sm' : 'text-2xl md:text-3xl'
+            } font-semibold text-pink-300 ml-0.5`}
+          >
             %
           </span>
         </div>
-        <span className="text-xs uppercase tracking-widest text-pink-200/80 font-medium mt-1">
-          Compatibility
-        </span>
+        {size > 140 && (
+          <span className="text-xs uppercase tracking-widest text-pink-200/80 font-medium mt-1">
+            Compatibility
+          </span>
+        )}
       </div>
     </div>
   );
