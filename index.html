@@ -1,26 +1,2165 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Love Calculator - Compatibility Test, Famous Couples & Love Tips</title>
-    <meta name="description" content="Discover your romantic compatibility with the Love Calculator. Test your match, read relationship tips, explore famous couples love scores, and contact our team." />
-    <meta name="keywords" content="love calculator, compatibility test, famous couples love scores, relationship tips, soulmates, romantic match, contact love calculator" />
-    <meta property="og:title" content="Love Calculator - Compatibility Test & Famous Couples" />
-    <meta property="og:description" content="Find out how strong your love really is! Test your compatibility, read love tips, explore famous couples, and get in touch." />
-    <meta property="og:type" content="website" />
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Love Calculator - Compatibility Test, Famous Couples & Love Tips" />
-    <meta name="twitter:description" content="Find out how strong your love really is! Test your compatibility, read love tips, and explore famous couples." />
-    <meta name="google-site-verification" content="URbWqIt2Dm-oLJfMYzeNvO4MzV0H_GkEAHwgJQcDo9g" />
-    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23ec4899'><path d='M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z'/></svg>" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,600&display=swap" rel="stylesheet" />
-  </head>
-  <body class="bg-[#0b071a] text-slate-100 antialiased selection:bg-rose-500 selection:text-white min-h-screen">
-    <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
-  </body>
-</html>
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Stylish Name Generator - 30+ Fancy Fonts & Nickname Maker</title>
+  <meta name="description" content="Generate 30+ stylish Unicode fonts, fancy nicknames, and symbols for PUBG, Free Fire, Instagram, and WhatsApp with one-click copy." />
+  <meta name="keywords" content="stylish name generator, fancy text generator, pubg name maker, free fire nickname, instagram font generator, cool text symbols, unicode fonts" />
+  <meta name="google-site-verification" content="URbWqIt2Dm-oLJfMYzeNvO4MzV0H_GkEAHwgJQcDo9g" />
 
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Stylish Name Generator - 30+ Fancy Fonts & Nicknames" />
+  <meta property="og:description" content="Convert your name into 30+ stylish fonts, symbols, and gaming nicknames with instant one-click copy." />
+  <meta property="og:image" content="https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=1200&auto=format&fit=crop&q=80" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Stylish Name Generator - 30+ Fancy Fonts" />
+  <meta name="twitter:description" content="Convert your name into 30+ stylish fonts, gaming nicknames, and aesthetic symbols." />
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%236366f1'><path d='M12 2l2.4 7.2h7.6l-6.1 4.5 2.3 7.3-6.2-4.6-6.2 4.6 2.3-7.3-6.1-4.5h7.6z'/></svg>" />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+  <style>
+    /* ==========================================================================
+       CSS Variables & Themes (Dark / Light)
+       ========================================================================== */
+    :root {
+      --font-heading: 'Outfit', sans-serif;
+      --font-body: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+      --transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+      --radius-sm: 8px;
+      --radius-md: 14px;
+      --radius-lg: 20px;
+      --radius-full: 9999px;
+    }
+
+    [data-theme="dark"] {
+      --bg-base: #0b0f19;
+      --bg-surface: #111827;
+      --bg-card: rgba(19, 27, 44, 0.75);
+      --bg-card-hover: rgba(26, 36, 59, 0.9);
+      --bg-input: rgba(15, 23, 42, 0.8);
+      --border-color: rgba(255, 255, 255, 0.08);
+      --border-hover: rgba(99, 102, 241, 0.45);
+      --text-main: #f8fafc;
+      --text-muted: #94a3b8;
+      --text-sub: #cbd5e1;
+      --accent: #6366f1;
+      --accent-hover: #4f46e5;
+      --accent-light: rgba(99, 102, 241, 0.15);
+      --accent-glow: rgba(99, 102, 241, 0.3);
+      --rose-accent: #f43f5e;
+      --rose-light: rgba(244, 63, 94, 0.15);
+      --success: #10b981;
+      --shadow-card: 0 10px 30px -10px rgba(0, 0, 0, 0.5);
+      --hero-gradient: radial-gradient(circle at 50% 0%, rgba(99, 102, 241, 0.22) 0%, rgba(244, 63, 94, 0.12) 40%, rgba(11, 15, 25, 0) 75%);
+    }
+
+    [data-theme="light"] {
+      --bg-base: #f8fafc;
+      --bg-surface: #ffffff;
+      --bg-card: rgba(255, 255, 255, 0.9);
+      --bg-card-hover: #ffffff;
+      --bg-input: #ffffff;
+      --border-color: rgba(226, 232, 240, 0.9);
+      --border-hover: rgba(99, 102, 241, 0.5);
+      --text-main: #0f172a;
+      --text-muted: #64748b;
+      --text-sub: #334155;
+      --accent: #4f46e5;
+      --accent-hover: #4338ca;
+      --accent-light: rgba(79, 70, 229, 0.1);
+      --accent-glow: rgba(79, 70, 229, 0.2);
+      --rose-accent: #e11d48;
+      --rose-light: rgba(225, 29, 72, 0.1);
+      --success: #059669;
+      --shadow-card: 0 10px 25px -5px rgba(0, 0, 0, 0.05), 0 8px 10px -6px rgba(0, 0, 0, 0.02);
+      --hero-gradient: radial-gradient(circle at 50% 0%, rgba(99, 102, 241, 0.14) 0%, rgba(244, 63, 94, 0.08) 45%, rgba(248, 250, 252, 0) 80%);
+    }
+
+    /* ==========================================================================
+       Base & Reset Styles
+       ========================================================================== */
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: var(--font-body);
+      background-color: var(--bg-base);
+      color: var(--text-main);
+      min-height: 100vh;
+      line-height: 1.6;
+      transition: background-color 0.3s ease, color 0.3s ease;
+      overflow-x: hidden;
+      display: flex;
+      flex-direction: column;
+    }
+
+    h1, h2, h3, h4 {
+      font-family: var(--font-heading);
+      font-weight: 700;
+      line-height: 1.25;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    button {
+      font-family: inherit;
+      cursor: pointer;
+      border: none;
+      background: none;
+      transition: var(--transition);
+    }
+
+    input {
+      font-family: inherit;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+
+    /* ==========================================================================
+       Header & Navbar
+       ========================================================================== */
+    .site-header {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      background: rgba(17, 24, 39, 0.75);
+      border-bottom: 1px solid var(--border-color);
+      transition: var(--transition);
+    }
+    [data-theme="light"] .site-header {
+      background: rgba(255, 255, 255, 0.85);
+    }
+
+    .header-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 70px;
+    }
+
+    .brand-logo {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-family: var(--font-heading);
+      font-size: 1.25rem;
+      font-weight: 800;
+      letter-spacing: -0.02em;
+    }
+
+    .brand-icon {
+      width: 36px;
+      height: 36px;
+      border-radius: 10px;
+      background: linear-gradient(135deg, var(--accent), var(--rose-accent));
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #ffffff;
+      box-shadow: 0 0 15px var(--accent-glow);
+    }
+
+    .brand-text {
+      background: linear-gradient(135deg, var(--text-main) 40%, var(--accent));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .header-actions {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+    }
+
+    .nav-links {
+      display: none;
+      gap: 20px;
+    }
+    @media (min-width: 768px) {
+      .nav-links {
+        display: flex;
+      }
+    }
+
+    .nav-link {
+      font-size: 0.9rem;
+      font-weight: 600;
+      color: var(--text-muted);
+      transition: var(--transition);
+    }
+    .nav-link:hover {
+      color: var(--accent);
+    }
+
+    .theme-toggle-btn {
+      width: 40px;
+      height: 40px;
+      border-radius: var(--radius-md);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: 1px solid var(--border-color);
+      background: var(--bg-card);
+      color: var(--text-main);
+      transition: var(--transition);
+    }
+    .theme-toggle-btn:hover {
+      border-color: var(--accent);
+      transform: rotate(15deg);
+    }
+
+    /* ==========================================================================
+       Hero Section & Main Input
+       ========================================================================== */
+    .hero-section {
+      background: var(--hero-gradient);
+      padding: 60px 0 35px;
+      text-align: center;
+      position: relative;
+    }
+
+    .hero-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 6px 16px;
+      border-radius: var(--radius-full);
+      background: var(--accent-light);
+      border: 1px solid rgba(99, 102, 241, 0.3);
+      color: var(--accent);
+      font-size: 0.85rem;
+      font-weight: 600;
+      margin-bottom: 20px;
+      backdrop-filter: blur(8px);
+    }
+
+    .hero-title {
+      font-size: clamp(2rem, 5vw, 3.5rem);
+      margin-bottom: 16px;
+      letter-spacing: -0.03em;
+    }
+
+    .hero-title span {
+      background: linear-gradient(135deg, #818cf8, #ec4899, #f43f5e);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .hero-subtitle {
+      font-size: clamp(1rem, 2vw, 1.2rem);
+      color: var(--text-muted);
+      max-width: 620px;
+      margin: 0 auto 35px;
+      font-weight: 400;
+    }
+
+    .input-wrapper {
+      max-width: 720px;
+      margin: 0 auto;
+      position: relative;
+    }
+
+    .input-container {
+      position: relative;
+      background: var(--bg-input);
+      border: 2px solid var(--border-color);
+      border-radius: var(--radius-lg);
+      padding: 6px;
+      box-shadow: 0 10px 40px -10px rgba(0, 0, 0, 0.2), 0 0 0 1px var(--border-color);
+      transition: var(--transition);
+      display: flex;
+      align-items: center;
+    }
+    .input-container:focus-within {
+      border-color: var(--accent);
+      box-shadow: 0 12px 40px -10px var(--accent-glow), 0 0 0 3px var(--accent-light);
+    }
+
+    .input-icon {
+      padding-left: 18px;
+      color: var(--text-muted);
+      display: flex;
+      align-items: center;
+    }
+
+    .main-input {
+      width: 100%;
+      padding: 16px 14px;
+      font-size: 1.15rem;
+      font-weight: 600;
+      color: var(--text-main);
+      background: transparent;
+      border: none;
+      outline: none;
+    }
+    .main-input::placeholder {
+      color: var(--text-muted);
+      font-weight: 400;
+    }
+
+    .clear-btn {
+      width: 36px;
+      height: 36px;
+      border-radius: var(--radius-full);
+      display: none;
+      align-items: center;
+      justify-content: center;
+      color: var(--text-muted);
+      margin-right: 8px;
+      background: rgba(255, 255, 255, 0.05);
+    }
+    .clear-btn.visible {
+      display: flex;
+    }
+    .clear-btn:hover {
+      background: rgba(255, 255, 255, 0.15);
+      color: var(--text-main);
+    }
+
+    .sample-tags {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      margin-top: 18px;
+    }
+
+    .sample-label {
+      font-size: 0.85rem;
+      color: var(--text-muted);
+    }
+
+    .sample-chip {
+      padding: 4px 12px;
+      font-size: 0.85rem;
+      border-radius: var(--radius-full);
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      color: var(--text-sub);
+      transition: var(--transition);
+    }
+    .sample-chip:hover {
+      border-color: var(--accent);
+      color: var(--accent);
+      transform: translateY(-2px);
+    }
+
+    /* ==========================================================================
+       Category Tabs
+       ========================================================================== */
+    .filter-section {
+      padding: 25px 0 10px;
+      position: sticky;
+      top: 70px;
+      z-index: 90;
+      background: var(--bg-base);
+      transition: background-color 0.3s ease;
+    }
+
+    .tabs-wrapper {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      overflow-x: auto;
+      padding: 8px 4px 16px;
+      scrollbar-width: none;
+    }
+    .tabs-wrapper::-webkit-scrollbar {
+      display: none;
+    }
+
+    .tab-btn {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      padding: 10px 18px;
+      border-radius: var(--radius-full);
+      font-size: 0.9rem;
+      font-weight: 600;
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      color: var(--text-muted);
+      white-space: nowrap;
+      transition: var(--transition);
+    }
+    .tab-btn:hover {
+      border-color: var(--accent);
+      color: var(--text-main);
+    }
+    .tab-btn.active {
+      background: linear-gradient(135deg, var(--accent), var(--rose-accent));
+      color: #ffffff;
+      border-color: transparent;
+      box-shadow: 0 4px 15px var(--accent-glow);
+    }
+
+    .badge-count {
+      padding: 2px 7px;
+      font-size: 0.75rem;
+      border-radius: var(--radius-full);
+      background: rgba(255, 255, 255, 0.2);
+    }
+
+    /* ==========================================================================
+       Results Cards Grid
+       ========================================================================== */
+    .results-section {
+      padding: 20px 0 60px;
+      flex: 1;
+    }
+
+    .results-count-bar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 20px;
+      color: var(--text-muted);
+      font-size: 0.9rem;
+      font-weight: 500;
+    }
+
+    .styles-grid {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      gap: 16px;
+    }
+    @media (min-width: 640px) {
+      .styles-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+    @media (min-width: 1024px) {
+      .styles-grid {
+        grid-template-columns: repeat(3, 1fr);
+      }
+    }
+
+    .style-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius-lg);
+      padding: 20px;
+      box-shadow: var(--shadow-card);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      gap: 16px;
+      transition: var(--transition);
+      position: relative;
+    }
+    .style-card:hover {
+      transform: translateY(-4px);
+      border-color: var(--border-hover);
+      box-shadow: 0 16px 35px -8px var(--accent-glow);
+      background: var(--bg-card-hover);
+    }
+
+    .card-top {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .style-category-tag {
+      font-size: 0.75rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      padding: 3px 10px;
+      border-radius: var(--radius-full);
+      background: var(--accent-light);
+      color: var(--accent);
+      border: 1px solid rgba(99, 102, 241, 0.2);
+    }
+
+    .fav-btn {
+      color: var(--text-muted);
+      padding: 6px;
+      border-radius: var(--radius-sm);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: var(--transition);
+    }
+    .fav-btn:hover {
+      color: var(--rose-accent);
+      transform: scale(1.15);
+    }
+    .fav-btn.active {
+      color: var(--rose-accent);
+      fill: var(--rose-accent);
+    }
+
+    .result-text-box {
+      min-height: 52px;
+      display: flex;
+      align-items: center;
+      word-break: break-all;
+    }
+
+    .result-text {
+      font-size: 1.25rem;
+      font-weight: 600;
+      color: var(--text-main);
+      user-select: all;
+    }
+
+    .card-bottom {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding-top: 12px;
+      border-top: 1px solid var(--border-color);
+    }
+
+    .style-name {
+      font-size: 0.85rem;
+      color: var(--text-muted);
+      font-weight: 500;
+    }
+
+    .copy-btn {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      padding: 8px 16px;
+      border-radius: var(--radius-md);
+      font-size: 0.85rem;
+      font-weight: 600;
+      background: var(--accent);
+      color: #ffffff;
+      box-shadow: 0 4px 12px var(--accent-glow);
+      transition: var(--transition);
+    }
+    .copy-btn:hover {
+      background: var(--accent-hover);
+      transform: scale(1.02);
+    }
+    .copy-btn.copied {
+      background: var(--success);
+      box-shadow: 0 4px 12px rgba(16, 185, 129, 0.4);
+    }
+
+    /* Empty state */
+    .empty-state {
+      text-align: center;
+      padding: 60px 20px;
+      grid-column: 1 / -1;
+      background: var(--bg-card);
+      border-radius: var(--radius-lg);
+      border: 1px solid var(--border-color);
+    }
+    .empty-state svg {
+      color: var(--text-muted);
+      margin-bottom: 14px;
+    }
+    .empty-state h3 {
+      font-size: 1.25rem;
+      margin-bottom: 8px;
+    }
+    .empty-state p {
+      color: var(--text-muted);
+      font-size: 0.95rem;
+    }
+
+    /* ==========================================================================
+       Popular Name Ideas Section (PUBG, Free Fire, IG, WhatsApp)
+       ========================================================================== */
+    .popular-section {
+      padding: 70px 0;
+      background: var(--bg-surface);
+      border-top: 1px solid var(--border-color);
+      border-bottom: 1px solid var(--border-color);
+      transition: background-color 0.3s ease;
+    }
+
+    .section-header {
+      text-align: center;
+      max-width: 650px;
+      margin: 0 auto 40px;
+    }
+    .section-header h2 {
+      font-size: clamp(1.8rem, 3.5vw, 2.5rem);
+      margin-bottom: 12px;
+    }
+    .section-header p {
+      color: var(--text-muted);
+      font-size: 1rem;
+    }
+
+    .popular-grid {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      gap: 24px;
+    }
+    @media (min-width: 768px) {
+      .popular-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+    @media (min-width: 1024px) {
+      .popular-grid {
+        grid-template-columns: repeat(4, 1fr);
+      }
+    }
+
+    .popular-column {
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius-lg);
+      padding: 24px 20px;
+      box-shadow: var(--shadow-card);
+      display: flex;
+      flex-direction: column;
+    }
+
+    .column-header {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 20px;
+      padding-bottom: 14px;
+      border-bottom: 1px solid var(--border-color);
+    }
+    .column-icon {
+      width: 40px;
+      height: 40px;
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #fff;
+    }
+    .col-pubg { background: linear-gradient(135deg, #f59e0b, #d97706); }
+    .col-ff { background: linear-gradient(135deg, #ef4444, #b91c1c); }
+    .col-ig { background: linear-gradient(135deg, #ec4899, #8b5cf6); }
+    .col-wa { background: linear-gradient(135deg, #10b981, #059669); }
+
+    .column-header h3 {
+      font-size: 1.15rem;
+    }
+
+    .names-list {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .popular-item {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 10px 14px;
+      background: rgba(255, 255, 255, 0.03);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius-md);
+      transition: var(--transition);
+      cursor: pointer;
+    }
+    .popular-item:hover {
+      border-color: var(--accent);
+      background: var(--accent-light);
+      transform: translateX(3px);
+    }
+
+    .popular-text {
+      font-size: 0.95rem;
+      font-weight: 600;
+      color: var(--text-main);
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      margin-right: 8px;
+    }
+
+    .mini-copy {
+      color: var(--text-muted);
+      padding: 4px;
+      border-radius: 6px;
+      transition: var(--transition);
+      display: flex;
+    }
+    .popular-item:hover .mini-copy {
+      color: var(--accent);
+    }
+
+    /* ==========================================================================
+       How to Use Section
+       ========================================================================== */
+    .how-it-works {
+      padding: 70px 0;
+    }
+
+    .steps-grid {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      gap: 24px;
+    }
+    @media (min-width: 768px) {
+      .steps-grid {
+        grid-template-columns: repeat(3, 1fr);
+      }
+    }
+
+    .step-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius-lg);
+      padding: 30px 24px;
+      position: relative;
+      overflow: hidden;
+      box-shadow: var(--shadow-card);
+    }
+
+    .step-number {
+      font-family: var(--font-heading);
+      font-size: 3rem;
+      font-weight: 800;
+      color: rgba(99, 102, 241, 0.15);
+      position: absolute;
+      top: 15px;
+      right: 20px;
+      line-height: 1;
+    }
+
+    .step-icon {
+      width: 48px;
+      height: 48px;
+      border-radius: 12px;
+      background: var(--accent-light);
+      color: var(--accent);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 20px;
+    }
+
+    .step-card h3 {
+      font-size: 1.2rem;
+      margin-bottom: 10px;
+    }
+
+    .step-card p {
+      color: var(--text-muted);
+      font-size: 0.95rem;
+      line-height: 1.6;
+    }
+
+    /* ==========================================================================
+       FAQ Accordion Section
+       ========================================================================== */
+    .faq-section {
+      padding: 60px 0 80px;
+      background: var(--bg-surface);
+      border-top: 1px solid var(--border-color);
+    }
+
+    .faq-container {
+      max-width: 780px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+    }
+
+    .faq-item {
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius-md);
+      overflow: hidden;
+      transition: var(--transition);
+    }
+    .faq-item:hover {
+      border-color: var(--border-hover);
+    }
+
+    .faq-question {
+      width: 100%;
+      padding: 20px 24px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      font-size: 1.05rem;
+      font-weight: 600;
+      color: var(--text-main);
+      text-align: left;
+    }
+
+    .faq-icon {
+      color: var(--accent);
+      transition: transform 0.3s ease;
+      flex-shrink: 0;
+    }
+    .faq-item.open .faq-icon {
+      transform: rotate(180deg);
+    }
+
+    .faq-answer {
+      max-height: 0;
+      overflow: hidden;
+      padding: 0 24px;
+      color: var(--text-muted);
+      font-size: 0.95rem;
+      line-height: 1.6;
+      transition: max-height 0.35s ease, padding 0.35s ease;
+    }
+    .faq-item.open .faq-answer {
+      max-height: 250px;
+      padding-bottom: 20px;
+    }
+
+    /* ==========================================================================
+       Toast Notification
+       ========================================================================== */
+    .toast {
+      position: fixed;
+      bottom: 30px;
+      left: 50%;
+      transform: translateX(-50%) translateY(100px);
+      background: #10b981;
+      color: #ffffff;
+      padding: 12px 24px;
+      border-radius: var(--radius-full);
+      box-shadow: 0 10px 25px rgba(16, 185, 129, 0.4);
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-weight: 600;
+      font-size: 0.95rem;
+      z-index: 1000;
+      opacity: 0;
+      pointer-events: none;
+      transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    .toast.show {
+      transform: translateX(-50%) translateY(0);
+      opacity: 1;
+    }
+
+    /* ==========================================================================
+       Footer
+       ========================================================================== */
+    .site-footer {
+      background: var(--bg-surface);
+      border-top: 1px solid var(--border-color);
+      padding: 40px 0 30px;
+      margin-top: auto;
+      text-align: center;
+    }
+
+    .footer-text {
+      color: var(--text-muted);
+      font-size: 0.9rem;
+      margin-bottom: 12px;
+    }
+
+    .footer-links {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 20px;
+      font-size: 0.85rem;
+      color: var(--text-muted);
+      margin-bottom: 20px;
+    }
+    .footer-links a:hover {
+      color: var(--accent);
+    }
+
+    .footer-copy {
+      font-size: 0.8rem;
+      color: var(--text-muted);
+      opacity: 0.7;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ==========================================================================
+       Site Header / Navigation
+       ========================================================================== -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="#" class="brand-logo" aria-label="Stylish Name Generator Home">
+        <div class="brand-icon">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M12 2l2.4 7.2h7.6l-6.1 4.5 2.3 7.3-6.2-4.6-6.2 4.6 2.3-7.3-6.1-4.5h7.6z"/>
+          </svg>
+        </div>
+        <span class="brand-text">StylishNames</span>
+      </a>
+
+      <nav class="nav-links">
+        <a href="#generator" class="nav-link">Generator</a>
+        <a href="#popular" class="nav-link">Popular Nicknames</a>
+        <a href="#how-to-use" class="nav-link">How to Use</a>
+        <a href="#faq" class="nav-link">FAQ</a>
+      </nav>
+
+      <div class="header-actions">
+        <button id="themeToggle" class="theme-toggle-btn" aria-label="Toggle Dark / Light Mode" title="Toggle Theme">
+          <!-- Moon Icon (for Dark) -->
+          <svg id="moonIcon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+          <!-- Sun Icon (for Light) -->
+          <svg id="sunIcon" style="display:none;" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ==========================================================================
+       Hero Section
+       ========================================================================== -->
+  <section class="hero-section" id="generator">
+    <div class="container">
+      <div class="hero-badge">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
+          <path d="M12 2l2.4 7.2h7.6l-6.1 4.5 2.3 7.3-6.2-4.6-6.2 4.6 2.3-7.3-6.1-4.5h7.6z"/>
+        </svg>
+        <span>30+ Fancy Font Styles &amp; Symbols</span>
+      </div>
+
+      <h1 class="hero-title">
+        Stylish <span>Name Generator</span>
+      </h1>
+      <p class="hero-subtitle">
+        Type your name below to instantly convert it into aesthetic Unicode fonts, cool gamer tags, and symbol decorations with one-click copy.
+      </p>
+
+      <div class="input-wrapper">
+        <div class="input-container">
+          <div class="input-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"></path>
+              <path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"></path>
+            </svg>
+          </div>
+          <input
+            type="text"
+            id="nameInput"
+            class="main-input"
+            placeholder="Type your name or nickname..."
+            value="Alex"
+            maxlength="30"
+            autocomplete="off"
+            spellcheck="false"
+            autofocus
+          />
+          <button id="clearBtn" class="clear-btn visible" title="Clear text" aria-label="Clear text">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="18" y1="6" x2="6" y2="18"></line>
+              <line x1="6" y1="6" x2="18" y2="18"></line>
+            </svg>
+          </button>
+        </div>
+
+        <!-- Sample Quick Picks -->
+        <div class="sample-tags">
+          <span class="sample-label">Try popular names:</span>
+          <button class="sample-chip" data-name="Alex">Alex</button>
+          <button class="sample-chip" data-name="Shadow">Shadow</button>
+          <button class="sample-chip" data-name="Queen">Queen</button>
+          <button class="sample-chip" data-name="Warrior">Warrior</button>
+          <button class="sample-chip" data-name="Angel">Angel</button>
+          <button class="sample-chip" data-name="Legend">Legend</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       Category Tabs Filter
+       ========================================================================== -->
+  <section class="filter-section">
+    <div class="container">
+      <div class="tabs-wrapper" id="categoryTabs">
+        <button class="tab-btn active" data-category="all">
+          <span>All Styles</span>
+          <span class="badge-count" id="allCount">36</span>
+        </button>
+        <button class="tab-btn" data-category="fancy">
+          <span>✨ Fancy</span>
+        </button>
+        <button class="tab-btn" data-category="cool">
+          <span>⚡ Cool</span>
+        </button>
+        <button class="tab-btn" data-category="symbols">
+          <span>★ Symbols</span>
+        </button>
+        <button class="tab-btn" data-category="gaming">
+          <span>🎮 Gaming</span>
+        </button>
+        <button class="tab-btn" data-category="cute">
+          <span>♡ Cute</span>
+        </button>
+        <button class="tab-btn" data-category="favorites">
+          <span>❤️ Favorites</span>
+          <span class="badge-count" id="favCount">0</span>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       Results Section
+       ========================================================================== -->
+  <main class="results-section">
+    <div class="container">
+      <div class="results-count-bar">
+        <span id="resultsCount">Showing 36 stylish fonts</span>
+        <span id="charCount">4 characters</span>
+      </div>
+
+      <div class="styles-grid" id="stylesGrid">
+        <!-- Rendered dynamically by JavaScript -->
+      </div>
+    </div>
+  </main>
+
+  <!-- ==========================================================================
+       Popular Name Ideas Section (PUBG, Free Fire, Instagram, WhatsApp)
+       ========================================================================== -->
+  <section class="popular-section" id="popular">
+    <div class="container">
+      <div class="section-header">
+        <h2>Popular Gaming &amp; Social Nicknames</h2>
+        <p>Curated trending name styles ready to copy or click to customize in the generator.</p>
+      </div>
+
+      <div class="popular-grid">
+        <!-- PUBG Column -->
+        <div class="popular-column">
+          <div class="column-header">
+            <div class="column-icon col-pubg">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="10"></circle>
+                <circle cx="12" cy="12" r="6"></circle>
+                <circle cx="12" cy="12" r="2"></circle>
+              </svg>
+            </div>
+            <div>
+              <h3>PUBG Mobile</h3>
+            </div>
+          </div>
+          <div class="names-list">
+            <div class="popular-item" data-name="亗SOUL・DEAD亗">
+              <span class="popular-text">亗SOUL・DEAD亗</span>
+              <span class="mini-copy" title="Copy nickname">📋</span>
+            </div>
+            <div class="popular-item" data-name="꧁༒Mortal༒꧂">
+              <span class="popular-text">꧁༒Mortal༒꧂</span>
+              <span class="mini-copy" title="Copy nickname">📋</span>
+            </div>
+            <div class="popular-item" data-name="彡[HUNTER]彡">
+              <span class="popular-text">彡[HUNTER]彡</span>
+              <span class="mini-copy" title="Copy nickname">📋</span>
+            </div>
+            <div class="popular-item" data-name="𝕯𝖆𝖗𝖐_𝕶𝖓𝖎𝖌𝖍𝖙">
+              <span class="popular-text">𝕯𝖆𝖗𝖐_𝕶𝖓𝖎𝖌𝖍𝖙</span>
+              <span class="mini-copy" title="Copy nickname">📋</span>
+            </div>
+            <div class="popular-item" data-name="ᴮᴼˢˢ ᭄Gamer">
+              <span class="popular-text">ᴮᴼˢˢ ᭄Gamer</span>
+              <span class="mini-copy" title="Copy nickname">📋</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Free Fire Column -->
+        <div class="popular-column">
+          <div class="column-header">
+            <div class="column-icon col-ff">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
+              </svg>
+            </div>
+            <div>
+              <h3>Free Fire</h3>
+            </div>
+          </div>
+          <div class="names-list">
+            <div class="popular-item" data-name="꧁༺𝓡𝓐𝓖𝓝𝓐𝓡༻꧂">
+              <span class="popular-text">꧁༺𝓡𝓐𝓖𝓝𝓐𝓡༻꧂</span>
+              <span class="mini-copy" title="Copy nickname">📋</span>
+            </div>
+            <div class="popular-item" data-name="⚡Vampire⚡">
+              <span class="popular-text">⚡Vampire⚡</span>
+              <span class="mini-copy" title="Copy nickname">📋</span>
+            </div>
+            <div class="popular-item" data-name="☠︎BAD BOY☠︎">
+              <span class="popular-text">☠︎BAD BOY☠︎</span>
+              <span class="mini-copy" title="Copy nickname">📋</span>
+            </div>
+            <div class="popular-item" data-name="乂S K Y乂">
+              <span class="popular-text">乂S K Y乂</span>
+              <span class="mini-copy" title="Copy nickname">📋</span>
+            </div>
+            <div class="popular-item" data-name="⚔️COBRA⚔️">
+              <span class="popular-text">⚔️COBRA⚔️</span>
+              <span class="mini-copy" title="Copy nickname">📋</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Instagram Column -->
+        <div class="popular-column">
+          <div class="column-header">
+            <div class="column-icon col-ig">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+              </svg>
+            </div>
+            <div>
+              <h3>Instagram Bios</h3>
+            </div>
+          </div>
+          <div class="names-list">
+            <div class="popular-item" data-name="˗ˏˋ 𝑠𝑢𝑛𝑓𝑙𝑜𝑤𝑒𝑟 ˎˊ˗">
+              <span class="popular-text">˗ˏˋ 𝑠𝑢𝑛𝑓𝑙𝑜𝑤𝑒𝑟 ˎˊ˗</span>
+              <span class="mini-copy" title="Copy nickname">📋</span>
+            </div>
+            <div class="popular-item" data-name="✧ aesthetic.vibes ✧">
+              <span class="popular-text">✧ aesthetic.vibes ✧</span>
+              <span class="mini-copy" title="Copy nickname">📋</span>
+            </div>
+            <div class="popular-item" data-name="♡ angels_tears ♡">
+              <span class="popular-text">♡ angels_tears ♡</span>
+              <span class="mini-copy" title="Copy nickname">📋</span>
+            </div>
+            <div class="popular-item" data-name="𝒫𝓇𝒾𝓃𝒸𝑒𝓈𝓈">
+              <span class="popular-text">𝒫𝓇𝒾𝓃𝒸𝑒𝓈𝓈</span>
+              <span class="mini-copy" title="Copy nickname">📋</span>
+            </div>
+            <div class="popular-item" data-name="✿ Golden Hour ✿">
+              <span class="popular-text">✿ Golden Hour ✿</span>
+              <span class="mini-copy" title="Copy nickname">📋</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- WhatsApp Column -->
+        <div class="popular-column">
+          <div class="column-header">
+            <div class="column-icon col-wa">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path>
+              </svg>
+            </div>
+            <div>
+              <h3>WhatsApp Names</h3>
+            </div>
+          </div>
+          <div class="names-list">
+            <div class="popular-item" data-name="♛ Mr. Perfect ♛">
+              <span class="popular-text">♛ Mr. Perfect ♛</span>
+              <span class="mini-copy" title="Copy nickname">📋</span>
+            </div>
+            <div class="popular-item" data-name="✿ Smiling Soul ✿">
+              <span class="popular-text">✿ Smiling Soul ✿</span>
+              <span class="mini-copy" title="Copy nickname">📋</span>
+            </div>
+            <div class="popular-item" data-name="𝓝𝓮𝓿𝓮𝓻 𝓖𝓲𝓿𝓮 𝓤𝓹">
+              <span class="popular-text">𝓝𝓮𝓿𝓮𝓻 𝓖𝓲𝓿𝓮 𝓤𝓹</span>
+              <span class="mini-copy" title="Copy nickname">📋</span>
+            </div>
+            <div class="popular-item" data-name="★彡 Silent Star 彡★">
+              <span class="popular-text">★彡 Silent Star 彡★</span>
+              <span class="mini-copy" title="Copy nickname">📋</span>
+            </div>
+            <div class="popular-item" data-name="【 Silent Warrior 】">
+              <span class="popular-text">【 Silent Warrior 】</span>
+              <span class="mini-copy" title="Copy nickname">📋</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       How to Use Section
+       ========================================================================== -->
+  <section class="how-it-works" id="how-to-use">
+    <div class="container">
+      <div class="section-header">
+        <h2>How It Works</h2>
+        <p>Three effortless steps to transform your plain text into eye-catching stylized fonts.</p>
+      </div>
+
+      <div class="steps-grid">
+        <div class="step-card">
+          <div class="step-number">01</div>
+          <div class="step-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M12 20h9"></path>
+              <path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"></path>
+            </svg>
+          </div>
+          <h3>1. Type Your Name</h3>
+          <p>Enter any word, nickname, or bio text in the input box. The generator processes your text in real time as you type.</p>
+        </div>
+
+        <div class="step-card">
+          <div class="step-number">02</div>
+          <div class="step-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="12" cy="12" r="10"></circle>
+              <path d="M8 12h8"></path>
+              <path d="M12 8v8"></path>
+            </svg>
+          </div>
+          <h3>2. Pick a Style &amp; Filter</h3>
+          <p>Browse over 30+ distinctive aesthetic fonts or filter by categories like Gaming, Cute, Symbols, and Fancy.</p>
+        </div>
+
+        <div class="step-card">
+          <div class="step-number">03</div>
+          <div class="step-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+              <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+            </svg>
+          </div>
+          <h3>3. Copy &amp; Paste Anywhere</h3>
+          <p>Click the "Copy" button. Your stylish name is immediately copied to your clipboard, ready for Free Fire, PUBG, or Instagram!</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       FAQ Section
+       ========================================================================== -->
+  <section class="faq-section" id="faq">
+    <div class="container">
+      <div class="section-header">
+        <h2>Frequently Asked Questions</h2>
+        <p>Everything you need to know about stylish Unicode fonts and gaming names.</p>
+      </div>
+
+      <div class="faq-container">
+        <div class="faq-item open">
+          <button class="faq-question">
+            <span>What is the Stylish Name Generator?</span>
+            <svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <polyline points="6 9 12 15 18 9"></polyline>
+            </svg>
+          </button>
+          <div class="faq-answer">
+            The Stylish Name Generator is a free online tool that converts plain text into 30+ fancy Unicode fonts, decorative symbols, and gaming nicknames. You can easily copy and paste them onto any website or app.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>Are these fancy text styles supported on Instagram, PUBG, and WhatsApp?</span>
+            <svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <polyline points="6 9 12 15 18 9"></polyline>
+            </svg>
+          </button>
+          <div class="faq-answer">
+            Yes! Because our generator uses universal Unicode standards rather than custom font files, the generated styles work seamlessly across Instagram bios, TikTok usernames, PUBG Mobile, Free Fire, WhatsApp, Discord, and Facebook.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>How does this generator work without installing fonts?</span>
+            <svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <polyline points="6 9 12 15 18 9"></polyline>
+            </svg>
+          </button>
+          <div class="faq-answer">
+            Computers and smartphones recognize over 140,000 Unicode glyphs. This tool maps your standard keyboard characters (A-Z, a-z, 0-9) to their special mathematical, Fraktur, cursive, and decorative Unicode counterparts.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>Is this tool 100% free and private?</span>
+            <svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <polyline points="6 9 12 15 18 9"></polyline>
+            </svg>
+          </button>
+          <div class="faq-answer">
+            Yes, it is 100% free with unlimited conversions. All text processing occurs locally within your web browser (client-side), meaning your names and favorites are never sent to or stored on any remote server.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>Can I save my favorite generated styles?</span>
+            <svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <polyline points="6 9 12 15 18 9"></polyline>
+            </svg>
+          </button>
+          <div class="faq-answer">
+            Yes! Click the heart icon on any style card to bookmark it. Your favorites are securely saved in your browser's localStorage and can be viewed anytime under the "❤️ Favorites" tab.
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       Footer
+       ========================================================================== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-links">
+        <a href="#generator">Name Generator</a>
+        <span>·</span>
+        <a href="#popular">Popular Gaming Names</a>
+        <span>·</span>
+        <a href="#how-to-use">How to Use</a>
+        <span>·</span>
+        <a href="#faq">FAQ</a>
+      </div>
+      <p class="footer-text">
+        Created for gamers, creators, and aesthetic social profiles. Copy, customize, and stand out!
+      </p>
+      <p class="footer-copy">
+        &copy; 2026 Stylish Name Generator. All rights reserved.
+      </p>
+    </div>
+  </footer>
+
+  <!-- ==========================================================================
+       Toast Notification Element
+       ========================================================================== -->
+  <div id="toast" class="toast">
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+      <polyline points="20 6 9 17 4 12"></polyline>
+    </svg>
+    <span id="toastText">Copied to clipboard!</span>
+  </div>
+
+  <!-- ==========================================================================
+       Vanilla JavaScript (Fast, Zero Dependencies)
+       ========================================================================== -->
+  <script>
+    (function () {
+      'use strict';
+
+      // --------------------------------------------------------------------------
+      // 1. Unicode Font Conversion Maps
+      // --------------------------------------------------------------------------
+      const CHARS = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789';
+
+      function mapChars(text, map) {
+        return text.split('').map(char => map[char] || char).join('');
+      }
+
+      function buildMap(lower, upper, numbers = '') {
+        const map = {};
+        const lChars = 'abcdefghijklmnopqrstuvwxyz';
+        const uChars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+        const nChars = '0123456789';
+
+        for (let i = 0; i < 26; i++) {
+          if (lower[i]) map[lChars[i]] = lower[i];
+          if (upper[i]) map[uChars[i]] = upper[i];
+        }
+        if (numbers) {
+          for (let i = 0; i < 10; i++) {
+            if (numbers[i]) map[nChars[i]] = numbers[i];
+          }
+        }
+        return map;
+      }
+
+      // Mathematical bold sans
+      const boldSansMap = (function () {
+        const m = {};
+        for (let i = 0; i < 26; i++) {
+          m[String.fromCharCode(65 + i)] = String.fromCodePoint(0x1D5D4 + i);
+          m[String.fromCharCode(97 + i)] = String.fromCodePoint(0x1D5EE + i);
+        }
+        for (let i = 0; i < 10; i++) {
+          m[String.fromCharCode(48 + i)] = String.fromCodePoint(0x1D7EC + i);
+        }
+        return m;
+      })();
+
+      // Mathematical bold serif
+      const boldSerifMap = (function () {
+        const m = {};
+        for (let i = 0; i < 26; i++) {
+          m[String.fromCharCode(65 + i)] = String.fromCodePoint(0x1D400 + i);
+          m[String.fromCharCode(97 + i)] = String.fromCodePoint(0x1D41A + i);
+        }
+        for (let i = 0; i < 10; i++) {
+          m[String.fromCharCode(48 + i)] = String.fromCodePoint(0x1D7CE + i);
+        }
+        return m;
+      })();
+
+      // Mathematical italic
+      const italicMap = (function () {
+        const m = {};
+        for (let i = 0; i < 26; i++) {
+          m[String.fromCharCode(65 + i)] = String.fromCodePoint(0x1D434 + i);
+          m[String.fromCharCode(97 + i)] = String.fromCodePoint(0x1D44E + i);
+        }
+        m['h'] = 'ℎ'; // Special exception in Unicode
+        return m;
+      })();
+
+      // Bold Italic
+      const boldItalicMap = (function () {
+        const m = {};
+        for (let i = 0; i < 26; i++) {
+          m[String.fromCharCode(65 + i)] = String.fromCodePoint(0x1D468 + i);
+          m[String.fromCharCode(97 + i)] = String.fromCodePoint(0x1D482 + i);
+        }
+        return m;
+      })();
+
+      // Cursive Script
+      const scriptLower = ['𝒶','𝒷','𝒸','𝒹','ℯ','𝒻','ℊ','𝒽','𝒾','𝒿','𝓀','𝓁','𝓂','𝓃','ℴ','𝓅','𝓆','𝓇','𝓈','𝓉','𝓊','𝓋','𝓌','𝓍','𝓎','𝓏'];
+      const scriptUpper = ['𝒜','ℬ','𝒞','𝒟','ℰ','ℱ','𝒢','ℋ','ℐ','𝒥','𝒦','ℒ','ℳ','𝒩','𝒪','𝒫','𝒬','ℛ','𝒮','𝒯','𝒰','𝒱','𝒲','𝒳','𝒴','𝒵'];
+      const scriptMap = buildMap(scriptLower, scriptUpper);
+
+      // Bold Cursive Script
+      const boldScriptLower = ['𝓪','𝓫','𝓬','𝓭','𝓮','𝓯','𝓰','𝓱','𝓲','𝓳','𝓴','𝓵','𝓶','𝓷','𝓸','𝓹','𝓺','𝓻','𝓼','𝓽','𝓾','𝓿','𝔀','𝔁','𝔂','𝔃'];
+      const boldScriptUpper = ['𝓐','𝓑','𝓒','𝓓','𝓔','𝓕','𝓖','𝓗','𝓘','𝓙','𝓚','𝓛','𝓜','𝓝','𝓞','𝓟','𝓠','𝓡','𝓢','𝓣','𝓤','𝓥','𝓦','𝓧','𝓨','𝓩'];
+      const boldScriptMap = buildMap(boldScriptLower, boldScriptUpper);
+
+      // Gothic / Fraktur
+      const frakturLower = ['𝔞','𝔟','𝔠','𝔡','𝔢','𝔣','𝔤','𝔥','𝔦','𝔧','𝔨','𝔩','𝔪','𝔫','𝔬','𝔭','𝔮','𝔯','𝔰','𝔱','𝔲','𝔳','𝔴','𝔵','𝔶','𝔷'];
+      const frakturUpper = ['𝔄','𝔅','ℭ','𝔇','𝔈','𝔉','𝔊','ℌ','ℑ','𝔍','𝔎','𝔏','𝔐','𝔑','𝔒','𝔓','𝔔','ℜ','𝔖','𝔗','𝔘','𝔙','𝔚','𝔛','𝔜','ℨ'];
+      const frakturMap = buildMap(frakturLower, frakturUpper);
+
+      // Bold Fraktur
+      const boldFrakturLower = ['𝖆','𝖇','𝖈','𝖉','𝖊','𝖋','𝖌','𝖍','𝖎','𝖏','𝖐','𝖑','𝖒','𝖓','𝖔','𝖕','𝖖','𝖗','𝖘','𝖙','𝖚','𝖛','𝖜','𝖝','𝖞','𝖟'];
+      const boldFrakturUpper = ['𝕬','𝕭','𝕮','𝕯','𝕰','𝕱','𝕲','𝕳','𝕴','𝕵','𝕶','𝕷','𝕸','𝕹','𝕺','𝕻','𝕼','𝕽','𝕾','𝕿','𝖀','𝖁','𝖂','𝖃','𝖄','𝖅'];
+      const boldFrakturMap = buildMap(boldFrakturLower, boldFrakturUpper);
+
+      // Double Struck / Blackboard Bold
+      const doubleStruckLower = ['𝕒','𝕓','𝕔','𝕕','𝕖','𝕗','𝕘','𝕙','𝕚','𝕛','𝕜','𝕝','𝕞','𝕟','𝕠','𝕡','𝕢','𝕣','𝕤','𝕥','𝕦','𝕧','𝕨','𝕩','𝕪','𝕫'];
+      const doubleStruckUpper = ['𝔸','𝔹','ℂ','𝔻','𝔼','𝔽','𝔾','ℍ','𝕀','𝕁','𝕂','𝕃','𝕄','ℕ','𝕆','ℙ','ℚ','ℝ','𝕊','𝕋','𝕌','𝕍','𝕎','𝕏','𝕐','ℤ'];
+      const doubleStruckNums = ['𝟘','𝟙','𝟚','𝟛','𝟜','𝟝','𝟞','𝟟','𝟠','𝟡'];
+      const doubleStruckMap = buildMap(doubleStruckLower, doubleStruckUpper, doubleStruckNums);
+
+      // Circled / Bubble
+      const circledLower = ['ⓐ','ⓑ','ⓒ','ⓓ','ⓔ','ⓕ','ⓖ','ⓗ','ⓘ','ⓙ','ⓚ','ⓛ','ⓜ','ⓝ','ⓞ','ⓟ','ⓠ','ⓡ','ⓢ','ⓣ','ⓤ','ⓥ','ⓦ','ⓧ','ⓨ','ⓩ'];
+      const circledUpper = ['Ⓐ','Ⓑ','Ⓒ','Ⓓ','Ⓔ','Ⓕ','Ⓖ','Ⓗ','Ⓘ','Ⓙ','Ⓚ','Ⓛ','Ⓜ','Ⓝ','Ⓞ','Ⓟ','Ⓠ','Ⓡ','Ⓢ','Ⓣ','Ⓤ','Ⓥ','Ⓦ','Ⓧ','Ⓨ','Ⓩ'];
+      const circledNums = ['⓪','①','②','③','④','⑤','⑥','⑦','⑧','⑨'];
+      const circledMap = buildMap(circledLower, circledUpper, circledNums);
+
+      // Filled Circled / Black Bubble
+      const filledCircledLower = ['🅐','🅑','🅒','🅓','🅔','🅕','🅖','🅗','🅘','🅙','🅚','🅛','🅜','🅝','🅞','🅟','🅠','🅡','🅢','🅣','🅤','🅥','🅦','🅧','🅨','🅩'];
+      const filledCircledUpper = ['🅐','🅑','🅒','🅓','🅔','🅕','🅖','🅗','🅘','🅙','🅚','🅛','🅜','🅝','🅞','🅟','🅠','🅡','🅢','🅣','🅤','🅥','🅦','🅧','🅨','🅩'];
+      const filledCircledNums = ['⓿','➊','➋','➌','➍','➎','➏','➐','➑','➒'];
+      const filledCircledMap = buildMap(filledCircledLower, filledCircledUpper, filledCircledNums);
+
+      // Squared / Boxed
+      const squaredLower = ['🄰','🄱','🄲','🄳','🄴','🄵','🄶','🄷','🄸','🄹','🄺','🄻','🄼','🄽','🄾','🄿','🅀','🅁','🅂','🅃','🅄','🅅','🅆','🅇','🅈','🅉'];
+      const squaredUpper = ['🄰','🄱','🄲','🄳','🄴','🄵','🄶','🄷','🄸','🄹','🄺','🄻','🄼','🄽','🄾','🄿','🅀','🅁','🅂','🅃','🅄','🅅','🅆','🅇','🅈','🅉'];
+      const squaredMap = buildMap(squaredLower, squaredUpper);
+
+      // Filled Squared / Black Box
+      const filledSquaredLower = ['🅰','🅱','🅲','🅳','🅴','🅵','🅶','🅷','🅸','🅹','🅺','🅻','🅼','🅽','🅾','🅿','🆀','🆁','🆂','🆃','🆄','🆅','🆆','🆇','🆈','🆉'];
+      const filledSquaredUpper = ['🅰','🅱','🅲','🅳','🅴','🅵','🅶','🅷','🅸','🅹','🅺','🅻','🅼','🅽','🅾','🅿','🆀','🆁','🆂','🆃','🆄','🆅','🆆','🆇','🆈','🆉'];
+      const filledSquaredMap = buildMap(filledSquaredLower, filledSquaredUpper);
+
+      // Small Caps
+      const smallCapsLower = ['ᴀ','ʙ','ᴄ','ᴅ','ᴇ','ғ','ɢ','ʜ','ɪ','ᴊ','ᴋ','ʟ','ᴍ','ɴ','ᴏ','ᴘ','ǫ','ʀ','s','ᴛ','ᴜ','ᴠ','ᴡ','x','ʏ','ᴢ'];
+      const smallCapsUpper = ['ᴀ','ʙ','ᴄ','ᴅ','ᴇ','ғ','ɢ','ʜ','ɪ','ᴊ','ᴋ','ʟ','ᴍ','ɴ','ᴏ','ᴘ','ǫ','ʀ','s','ᴛ','ᴜ','ᴠ','ᴡ','x','ʏ','ᴢ'];
+      const smallCapsMap = buildMap(smallCapsLower, smallCapsUpper);
+
+      // Monospace / Typewriter
+      const monospaceLower = ['𝚊','𝚋','𝚌','𝚍','𝚎','𝚏','𝚐','𝚑','𝚒','𝚓','𝚔','𝚕','𝚖','𝚗','𝚘','𝚙','𝚚','𝚛','𝚜','𝚝','𝚞','𝚟','𝚠','𝚡','𝚢','𝚣'];
+      const monospaceUpper = ['𝙰','𝙱','𝙲','𝙳','𝙴','𝙵','𝙶','𝙷','𝙸','𝙹','𝙺','𝙻','𝙼','𝙽','𝙾','𝙿','𝚀','𝚁','𝚂','𝚃','𝚄','𝚅','𝚆','𝚇','𝚈','𝚉'];
+      const monospaceNums = ['𝟶','𝟷','𝟸','𝟹','𝟺','𝟻','𝟼','𝟽','𝟾','𝟿'];
+      const monospaceMap = buildMap(monospaceLower, monospaceUpper, monospaceNums);
+
+      // Fullwidth / Vaporwave
+      const fullwidthMap = (function () {
+        const m = {};
+        for (let i = 0; i < 26; i++) {
+          m[String.fromCharCode(65 + i)] = String.fromCharCode(0xFF21 + i);
+          m[String.fromCharCode(97 + i)] = String.fromCharCode(0xFF41 + i);
+        }
+        for (let i = 0; i < 10; i++) {
+          m[String.fromCharCode(48 + i)] = String.fromCharCode(0xFF10 + i);
+        }
+        return m;
+      })();
+
+      // Upside Down / Inverted Map
+      const upsideDownMap = {
+        'a': 'ɐ', 'b': 'q', 'c': 'ɔ', 'd': 'p', 'e': 'ǝ', 'f': 'ɟ', 'g': 'ƃ', 'h': 'ɥ',
+        'i': 'ı', 'j': 'ɾ', 'k': 'ʞ', 'l': 'l', 'm': 'ɯ', 'n': 'u', 'o': 'o', 'p': 'd',
+        'q': 'b', 'r': 'ɹ', 's': 's', 't': 'ʇ', 'u': 'n', 'v': 'ʌ', 'w': 'ʍ', 'x': 'x',
+        'y': 'ʎ', 'z': 'z', 'A': '∀', 'B': '𐐒', 'C': 'Ɔ', 'D': 'p', 'E': 'Ǝ', 'F': 'Ⅎ',
+        'G': '⅁', 'H': 'H', 'I': 'I', 'J': 'ſ', 'K': 'ʞ', 'L': '˥', 'M': 'W', 'N': 'N',
+        'O': 'O', 'P': 'Ԁ', 'Q': 'Ό', 'R': 'ᴚ', 'S': 'S', 'T': '⊥', 'U': '∩', 'V': 'Λ',
+        'W': 'M', 'X': 'X', 'Y': '⅄', 'Z': 'Z', '1': 'Ɩ', '2': 'ᄅ', '3': 'Ɛ', '4': 'ㄣ',
+        '5': 'ϛ', '6': '9', '7': 'ㄥ', '8': '8', '9': '6', '0': '0'
+      };
+
+      // --------------------------------------------------------------------------
+      // 2. Definition of 36+ Stylish Font Transformers
+      // --------------------------------------------------------------------------
+      const STYLE_DEFINITIONS = [
+        // FANCY
+        {
+          id: 'bold-sans',
+          name: 'Bold Sans',
+          category: 'fancy',
+          transform: (txt) => mapChars(txt, boldSansMap)
+        },
+        {
+          id: 'bold-serif',
+          name: 'Bold Serif',
+          category: 'fancy',
+          transform: (txt) => mapChars(txt, boldSerifMap)
+        },
+        {
+          id: 'italic-serif',
+          name: 'Italic Serif',
+          category: 'fancy',
+          transform: (txt) => mapChars(txt, italicMap)
+        },
+        {
+          id: 'bold-italic',
+          name: 'Bold Italic',
+          category: 'fancy',
+          transform: (txt) => mapChars(txt, boldItalicMap)
+        },
+        {
+          id: 'cursive-script',
+          name: 'Cursive / Script',
+          category: 'fancy',
+          transform: (txt) => mapChars(txt, scriptMap)
+        },
+        {
+          id: 'bold-cursive',
+          name: 'Bold Cursive Script',
+          category: 'fancy',
+          transform: (txt) => mapChars(txt, boldScriptMap)
+        },
+        {
+          id: 'gothic-fraktur',
+          name: 'Gothic / Fraktur',
+          category: 'fancy',
+          transform: (txt) => mapChars(txt, frakturMap)
+        },
+        {
+          id: 'bold-fraktur',
+          name: 'Bold Gothic Fraktur',
+          category: 'fancy',
+          transform: (txt) => mapChars(txt, boldFrakturMap)
+        },
+        {
+          id: 'double-struck',
+          name: 'Double Struck',
+          category: 'fancy',
+          transform: (txt) => mapChars(txt, doubleStruckMap)
+        },
+        {
+          id: 'small-caps',
+          name: 'Small Capitals',
+          category: 'fancy',
+          transform: (txt) => mapChars(txt, smallCapsMap)
+        },
+        {
+          id: 'monospace',
+          name: 'Typewriter / Monospace',
+          category: 'fancy',
+          transform: (txt) => mapChars(txt, monospaceMap)
+        },
+        {
+          id: 'vaporwave-wide',
+          name: 'Vaporwave / Fullwidth',
+          category: 'fancy',
+          transform: (txt) => mapChars(txt, fullwidthMap)
+        },
+
+        // COOL
+        {
+          id: 'bubble-circled',
+          name: 'Bubble Circled Ⓐ',
+          category: 'cool',
+          transform: (txt) => mapChars(txt, circledMap)
+        },
+        {
+          id: 'black-bubble',
+          name: 'Inverted Bubble 🅐',
+          category: 'cool',
+          transform: (txt) => mapChars(txt, filledCircledMap)
+        },
+        {
+          id: 'squared-box',
+          name: 'Square Boxed 🄰',
+          category: 'cool',
+          transform: (txt) => mapChars(txt, squaredMap)
+        },
+        {
+          id: 'filled-box',
+          name: 'Black Box 🅰',
+          category: 'cool',
+          transform: (txt) => mapChars(txt, filledSquaredMap)
+        },
+        {
+          id: 'strikethrough',
+          name: 'Strikethrough',
+          category: 'cool',
+          transform: (txt) => txt.split('').map(c => c + '\u0336').join('')
+        },
+        {
+          id: 'slashed',
+          name: 'Slashed Text',
+          category: 'cool',
+          transform: (txt) => txt.split('').map(c => c + '\u0337').join('')
+        },
+        {
+          id: 'underlined',
+          name: 'Underline Flow',
+          category: 'cool',
+          transform: (txt) => txt.split('').map(c => c + '\u0332').join('')
+        },
+        {
+          id: 'upside-down',
+          name: 'Upside Down',
+          category: 'cool',
+          transform: (txt) => txt.split('').reverse().map(c => upsideDownMap[c] || c).join('')
+        },
+        {
+          id: 'equalizer-audio',
+          name: 'Audio Wave Equalizer',
+          category: 'cool',
+          transform: (txt) => `ıllıllı ${txt} ıllıllı`
+        },
+        {
+          id: 'wave-border',
+          name: 'Vapor Wave Border',
+          category: 'cool',
+          transform: (txt) => `～${txt}～`
+        },
+
+        // GAMING
+        {
+          id: 'pubg-emperor',
+          name: 'Warrior Emperor 亗',
+          category: 'gaming',
+          transform: (txt) => `亗 ${mapChars(txt, boldSansMap)} 亗`
+        },
+        {
+          id: 'dragon-wings',
+          name: 'Dragon Wings ꧁༺ ༻꧂',
+          category: 'gaming',
+          transform: (txt) => `꧁༺${txt}༻꧂`
+        },
+        {
+          id: 'gladiator-blades',
+          name: 'Gladiator Swords ⚔️',
+          category: 'gaming',
+          transform: (txt) => `⚔️ ${mapChars(txt, boldSansMap)} ⚔️`
+        },
+        {
+          id: 'death-squad',
+          name: 'Death Squad ☠️',
+          category: 'gaming',
+          transform: (txt) => `☠︎ ${txt} ☠︎`
+        },
+        {
+          id: 'thunder-pro',
+          name: 'Thunderbolt Gamer ⚡',
+          category: 'gaming',
+          transform: (txt) => `⚡${txt}⚡`
+        },
+        {
+          id: 'cyber-phantom',
+          name: 'Cyber Phantom 彡',
+          category: 'gaming',
+          transform: (txt) => `彡[${txt}]彡`
+        },
+        {
+          id: 'blade-cross',
+          name: 'Crossblade Warrior 乂',
+          category: 'gaming',
+          transform: (txt) => `乂${txt}乂`
+        },
+        {
+          id: 'boss-tier',
+          name: 'Mini Boss ᴮᴼˢˢ',
+          category: 'gaming',
+          transform: (txt) => `ᴮᴼˢˢ ${txt}`
+        },
+
+        // SYMBOLS
+        {
+          id: 'royal-wings',
+          name: 'Royal Wings ꧁꧂',
+          category: 'symbols',
+          transform: (txt) => `꧁${txt}꧂`
+        },
+        {
+          id: 'shooting-star',
+          name: 'Shooting Star ★彡',
+          category: 'symbols',
+          transform: (txt) => `★彡${txt}彡★`
+        },
+        {
+          id: 'royal-crown',
+          name: 'Crown of Royalty ♛',
+          category: 'symbols',
+          transform: (txt) => `♛ ${txt} ♛`
+        },
+        {
+          id: 'sparkle-aura',
+          name: 'Sparkle Aura ✧',
+          category: 'symbols',
+          transform: (txt) => `✧ ${txt} ✧`
+        },
+        {
+          id: 'pharaoh-shield',
+          name: 'Pharaoh Shield 𓊈𓊉',
+          category: 'symbols',
+          transform: (txt) => `𓊈 ${txt} 𓊉`
+        },
+        {
+          id: 'japanese-brackets',
+          name: 'Japanese Brackets 【】',
+          category: 'symbols',
+          transform: (txt) => `【 ${txt} 】`
+        },
+        {
+          id: 'yin-yang',
+          name: 'Yin Yang Balance ☯',
+          category: 'symbols',
+          transform: (txt) => `☯ ${txt} ☯`
+        },
+
+        // CUTE
+        {
+          id: 'cherry-blossom',
+          name: 'Cherry Blossom ✿',
+          category: 'cute',
+          transform: (txt) => `✿ ${mapChars(txt, scriptMap)} ✿`
+        },
+        {
+          id: 'sparkle-heart',
+          name: 'Love Heart ♡',
+          category: 'cute',
+          transform: (txt) => `♡ ${txt} ♡`
+        },
+        {
+          id: 'teddy-bear',
+          name: 'Teddy Bear ʕ•ᴥ•ʔ',
+          category: 'cute',
+          transform: (txt) => `ʕ•ᴥ•ʔ ${txt}`
+        },
+        {
+          id: 'whimsical-rays',
+          name: 'Whimsical Rays ˗ˏˋ ˎˊ˗',
+          category: 'cute',
+          transform: (txt) => `˗ˏˋ ${txt} ˎˊ˗`
+        },
+        {
+          id: 'aesthetic-arrow',
+          name: 'Aesthetic Arrow ╰┈➤',
+          category: 'cute',
+          transform: (txt) => `╰┈➤ ${txt}`
+        }
+      ];
+
+      // --------------------------------------------------------------------------
+      // 3. State Management & LocalStorage
+      // --------------------------------------------------------------------------
+      let currentCategory = 'all';
+      let favorites = [];
+
+      try {
+        const storedFavs = localStorage.getItem('stylish_name_favorites');
+        favorites = storedFavs ? JSON.parse(storedFavs) : [];
+      } catch (e) {
+        favorites = [];
+      }
+
+      function saveFavorites() {
+        try {
+          localStorage.setItem('stylish_name_favorites', JSON.stringify(favorites));
+        } catch (e) {}
+        updateFavCount();
+      }
+
+      function updateFavCount() {
+        const favCountEl = document.getElementById('favCount');
+        if (favCountEl) {
+          favCountEl.textContent = favorites.length;
+        }
+      }
+
+      // --------------------------------------------------------------------------
+      // 4. DOM Elements
+      // --------------------------------------------------------------------------
+      const nameInput = document.getElementById('nameInput');
+      const clearBtn = document.getElementById('clearBtn');
+      const stylesGrid = document.getElementById('stylesGrid');
+      const resultsCount = document.getElementById('resultsCount');
+      const charCount = document.getElementById('charCount');
+      const categoryTabs = document.getElementById('categoryTabs');
+      const toast = document.getElementById('toast');
+      const toastText = document.getElementById('toastText');
+      const themeToggle = document.getElementById('themeToggle');
+      const sunIcon = document.getElementById('sunIcon');
+      const moonIcon = document.getElementById('moonIcon');
+
+      // --------------------------------------------------------------------------
+      // 5. Toast Feedback
+      // --------------------------------------------------------------------------
+      let toastTimer = null;
+      function showToast(message) {
+        if (toastTimer) clearTimeout(toastTimer);
+        toastText.textContent = message || 'Copied to clipboard!';
+        toast.classList.add('show');
+        toastTimer = setTimeout(() => {
+          toast.classList.remove('show');
+        }, 2200);
+      }
+
+      // --------------------------------------------------------------------------
+      // 6. Copy to Clipboard
+      // --------------------------------------------------------------------------
+      function copyText(text, btnElement) {
+        if (navigator.clipboard && window.isSecureContext) {
+          navigator.clipboard.writeText(text).then(() => {
+            onCopySuccess(btnElement);
+          }).catch(() => {
+            fallbackCopy(text, btnElement);
+          });
+        } else {
+          fallbackCopy(text, btnElement);
+        }
+      }
+
+      function fallbackCopy(text, btnElement) {
+        const textArea = document.createElement('textarea');
+        textArea.value = text;
+        textArea.style.position = 'fixed';
+        textArea.style.left = '-9999px';
+        document.body.appendChild(textArea);
+        textArea.focus();
+        textArea.select();
+        try {
+          document.execCommand('copy');
+          onCopySuccess(btnElement);
+        } catch (err) {
+          showToast('Failed to copy');
+        }
+        document.body.removeChild(textArea);
+      }
+
+      function onCopySuccess(btnElement) {
+        showToast('✓ Copied to clipboard!');
+        if (btnElement) {
+          const originalHTML = btnElement.innerHTML;
+          btnElement.classList.add('copied');
+          btnElement.innerHTML = `
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
+              <polyline points="20 6 9 17 4 12"></polyline>
+            </svg>
+            <span>Copied!</span>
+          `;
+          setTimeout(() => {
+            btnElement.classList.remove('copied');
+            btnElement.innerHTML = originalHTML;
+          }, 1800);
+        }
+      }
+
+      // --------------------------------------------------------------------------
+      // 7. Render Result Cards
+      // --------------------------------------------------------------------------
+      function renderStyles() {
+        const rawText = nameInput.value.trim() || 'Your Name';
+        charCount.textContent = `${nameInput.value.length} characters`;
+
+        // Filter styles
+        let filtered = STYLE_DEFINITIONS;
+        if (currentCategory === 'favorites') {
+          filtered = STYLE_DEFINITIONS.filter(s => favorites.includes(s.id));
+        } else if (currentCategory !== 'all') {
+          filtered = STYLE_DEFINITIONS.filter(s => s.category === currentCategory);
+        }
+
+        resultsCount.textContent = `Showing ${filtered.length} stylish font${filtered.length === 1 ? '' : 's'}`;
+
+        if (filtered.length === 0) {
+          if (currentCategory === 'favorites') {
+            stylesGrid.innerHTML = `
+              <div class="empty-state">
+                <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                  <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+                </svg>
+                <h3>No favorites saved yet!</h3>
+                <p>Click the heart icon on any font card to add it to your personal favorites.</p>
+              </div>
+            `;
+          } else {
+            stylesGrid.innerHTML = `
+              <div class="empty-state">
+                <h3>No styles match this category</h3>
+                <p>Try switching to another category or check "All Styles".</p>
+              </div>
+            `;
+          }
+          return;
+        }
+
+        // Build HTML
+        let html = '';
+        filtered.forEach(style => {
+          const transformed = style.transform(rawText);
+          const isFav = favorites.includes(style.id);
+
+          html += `
+            <div class="style-card" data-style-id="${style.id}">
+              <div class="card-top">
+                <span class="style-category-tag">${style.category}</span>
+                <button
+                  class="fav-btn ${isFav ? 'active' : ''}"
+                  data-fav-id="${style.id}"
+                  title="${isFav ? 'Remove from favorites' : 'Add to favorites'}"
+                  aria-label="Favorite ${style.name}"
+                >
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="${isFav ? 'currentColor' : 'none'}" stroke="currentColor" stroke-width="2">
+                    <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+                  </svg>
+                </button>
+              </div>
+
+              <div class="result-text-box">
+                <div class="result-text">${escapeHtml(transformed)}</div>
+              </div>
+
+              <div class="card-bottom">
+                <span class="style-name">${escapeHtml(style.name)}</span>
+                <button
+                  class="copy-btn"
+                  data-copy-text="${escapeHtml(transformed)}"
+                  title="Copy this styled name"
+                  aria-label="Copy ${escapeHtml(transformed)}"
+                >
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                    <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+                  </svg>
+                  <span>Copy</span>
+                </button>
+              </div>
+            </div>
+          `;
+        });
+
+        stylesGrid.innerHTML = html;
+      }
+
+      function escapeHtml(str) {
+        return str
+          .replace(/&/g, '&amp;')
+          .replace(/</g, '&lt;')
+          .replace(/>/g, '&gt;')
+          .replace(/"/g, '&quot;')
+          .replace(/'/g, '&#039;');
+      }
+
+      // --------------------------------------------------------------------------
+      // 8. Event Listeners
+      // --------------------------------------------------------------------------
+
+      // Live conversion on input
+      nameInput.addEventListener('input', function () {
+        if (this.value.length > 0) {
+          clearBtn.classList.add('visible');
+        } else {
+          clearBtn.classList.remove('visible');
+        }
+        renderStyles();
+      });
+
+      // Clear input
+      clearBtn.addEventListener('click', function () {
+        nameInput.value = '';
+        nameInput.focus();
+        clearBtn.classList.remove('visible');
+        renderStyles();
+      });
+
+      // Quick sample buttons
+      document.querySelectorAll('.sample-chip').forEach(chip => {
+        chip.addEventListener('click', function () {
+          nameInput.value = this.dataset.name;
+          clearBtn.classList.add('visible');
+          nameInput.focus();
+          renderStyles();
+          showToast(`Applied "${this.dataset.name}"`);
+        });
+      });
+
+      // Category tab filtering
+      categoryTabs.addEventListener('click', function (e) {
+        const tabBtn = e.target.closest('.tab-btn');
+        if (!tabBtn) return;
+
+        document.querySelectorAll('.tab-btn').forEach(btn => btn.classList.remove('active'));
+        tabBtn.classList.add('active');
+
+        currentCategory = tabBtn.dataset.category;
+        renderStyles();
+      });
+
+      // Delegate clicks inside styles grid (Copy & Favorite)
+      stylesGrid.addEventListener('click', function (e) {
+        // Copy action
+        const copyBtn = e.target.closest('.copy-btn');
+        if (copyBtn) {
+          const textToCopy = copyBtn.dataset.copyText;
+          copyText(textToCopy, copyBtn);
+          return;
+        }
+
+        // Favorite action
+        const favBtn = e.target.closest('.fav-btn');
+        if (favBtn) {
+          const styleId = favBtn.dataset.favId;
+          const index = favorites.indexOf(styleId);
+
+          if (index > -1) {
+            favorites.splice(index, 1);
+            favBtn.classList.remove('active');
+            favBtn.querySelector('svg').setAttribute('fill', 'none');
+            showToast('Removed from favorites');
+          } else {
+            favorites.push(styleId);
+            favBtn.classList.add('active');
+            favBtn.querySelector('svg').setAttribute('fill', 'currentColor');
+            showToast('Saved to favorites! ❤️');
+          }
+
+          saveFavorites();
+          if (currentCategory === 'favorites') {
+            renderStyles();
+          }
+        }
+      });
+
+      // Popular section quick copy & load into generator
+      document.querySelectorAll('.popular-item').forEach(item => {
+        item.addEventListener('click', function () {
+          const name = this.dataset.name;
+          copyText(name, null);
+          nameInput.value = name;
+          clearBtn.classList.add('visible');
+          renderStyles();
+          showToast(`Copied "${name}" & updated input!`);
+        });
+      });
+
+      // FAQ accordion toggle
+      document.querySelectorAll('.faq-question').forEach(btn => {
+        btn.addEventListener('click', function () {
+          const item = this.parentElement;
+          const isOpen = item.classList.contains('open');
+
+          document.querySelectorAll('.faq-item').forEach(i => i.classList.remove('open'));
+          if (!isOpen) {
+            item.classList.add('open');
+          }
+        });
+      });
+
+      // --------------------------------------------------------------------------
+      // 9. Dark / Light Mode Toggle with Persistence
+      // --------------------------------------------------------------------------
+      function applyTheme(theme) {
+        document.documentElement.setAttribute('data-theme', theme);
+        if (theme === 'light') {
+          sunIcon.style.display = 'none';
+          moonIcon.style.display = 'block';
+        } else {
+          sunIcon.style.display = 'block';
+          moonIcon.style.display = 'none';
+        }
+        try {
+          localStorage.setItem('stylish_name_theme', theme);
+        } catch (e) {}
+      }
+
+      // Check saved theme or system preference
+      const savedTheme = (function () {
+        try {
+          return localStorage.getItem('stylish_name_theme');
+        } catch (e) {
+          return null;
+        }
+      })();
+
+      if (savedTheme) {
+        applyTheme(savedTheme);
+      } else if (window.matchMedia && window.matchMedia('(prefers-color-scheme: light)').matches) {
+        applyTheme('light');
+      } else {
+        applyTheme('dark');
+      }
+
+      themeToggle.addEventListener('click', function () {
+        const currentTheme = document.documentElement.getAttribute('data-theme') || 'dark';
+        const nextTheme = currentTheme === 'dark' ? 'light' : 'dark';
+        applyTheme(nextTheme);
+      });
+
+      // --------------------------------------------------------------------------
+      // 10. Initial Render
+      // --------------------------------------------------------------------------
+      updateFavCount();
+      renderStyles();
+
+    })();
+  </script>
+</body>
+</html>

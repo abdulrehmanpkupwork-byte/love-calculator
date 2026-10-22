@@ -1,6 +1,6 @@
 {
-  "name": "Love Calculator - Romantic Compatibility Test",
-  "description": "Discover your romantic compatibility with the Love Calculator. Enter your names to reveal your love percentage, relationship dynamics, and cosmic spark.",
+  "name": "Stylish Name Generator - Fancy Fonts & Nicknames",
+  "description": "Generate 30+ stylish Unicode fonts, fancy nicknames, and aesthetic symbols for PUBG, Free Fire, Instagram, and WhatsApp with one-click copy.",
   "requestFramePermissions": [],
   "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
 }
